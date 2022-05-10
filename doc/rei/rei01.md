@@ -14,5 +14,5 @@ Com este sistema pretendemos solucionar a falta de controlo sobre os produtos al
 
 
 ---
-[< Previous](rei00.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rei02.md)
+[< Previous](rei00.md) | [^ Main](https://github.com/tcm-sibd-g07/SIBD07/) | [Next >](rei02.md)
 :--- | :---: | ---: 
