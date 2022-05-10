@@ -9,6 +9,14 @@ GERENTE (nome (primeiro e último), número CC, endereço, sexo, data de nascime
 ARTIGO (nome, código localização unica, hora lim, val caução)
 CLIENTE (nome (primeiro e último), número CC, email e telefone)
 
+**Associações:**
+trabalhaPara (EMPREGADO, DEPARTAMENTO) N:M
+fazReposição (EMPREGADO, ARTIGO) N:M
+gerencia (GERENTE, ARTIGO) 1:N
+controla (GERENTE, DEPARTAMENTO) 1:1
+aluga (CLIENTE, ARTIGO) N:M
+
+
 
 
 
