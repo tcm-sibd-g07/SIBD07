@@ -1,13 +1,15 @@
 # C3 : Esquema conceptual
 
 ## Modelo E/A
-Entidades:
+**Entidades:**
 
 DEPARTAMENTO (nome, numero, localização (cidade, rua, numero))
 EMPREGADO (nome (primeiro e último), ID, número CC, endereço, salário, sexo, data de nascimento) 
 GERENTE (nome (primeiro e último), número CC, endereço, sexo, data de nascimento)
 ARTIGO (nome, código localização unica, hora lim, val caução)
 CLIENTE (nome (primeiro e último), número CC, email e telefone)
+
+
 
 
 Exemplo de inserção de uma imagem:   
