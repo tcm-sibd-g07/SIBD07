@@ -30,12 +30,11 @@ aluga (CLIENTE, ARTIGO) N:M
 
 
 
-Exemplo de inserção de uma imagem:   
+Diagrama E/A 
 ![An alternative description](images/Diagrama.jpeg)   
 
-Always add a description to help the user understand the figure 
+Driagrama Entidade-Associação
 
-NOTA: Cada entidade-tipo e cada associação devem ter um pequeno texto – um ou dois parágrafos – para descrever esse elemento do modelo e os seus atributos)
 
 ## Regras de negócio adicionais (Restrições)
 Alguns dos artigos não tem qualquer caução ou limite de horas de aluguer.
