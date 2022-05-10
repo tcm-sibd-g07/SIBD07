@@ -6,7 +6,7 @@ Projeto desenvolvido pelos alunos Lucas Baptista (36555), Kevin Bastos (38120), 
 
 ## Descrição do trabalho
 
-Neste trabalho pretendemos melhorar o sistema de uma empresa de aluguer de artigos de praia, para uma melhor organização e dinâmica da mesma.
+Uma empresa de aluguer de artigos de praia pretende melhorar o seu sistema para uma melhor organização e dinâmica. Para isso, será criada uma base de dados para um melhor controlo e funcionamento da distribuição dos artigos nos pontos de aluguer, bem como a organização do pessoal.
 
 
 ## Reports
@@ -14,7 +14,7 @@ Neste trabalho pretendemos melhorar o sistema de uma empresa de aluguer de artig
 :[REI](doc/rei/rei00.md)
 
 ## Team
-* Lucas Baptista [@LucasBaptista](https://github.com/marcoamarooliveira)
+* Lucas Baptista [@LucasBaptista](https://github.com/Ziimaz)
 * Kevin Bastos [@KevinBastos](https://github.com/kevinbastos07)
-* Rúben Novais [@RubenNovais](https://github.com/marcoamarooliveira)
-* Wilson Oliveira [@WilsonOliveira](https://github.com/marcoamarooliveira)
+* Rúben Novais [@RubenNovais](https://github.com/r5b2n)
+* Wilson Oliveira [@WilsonOliveira](https://github.com/wilsonoliveira01)
