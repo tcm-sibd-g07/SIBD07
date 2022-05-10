@@ -13,6 +13,8 @@ ARTIGO (nome, código localização unica, hora lim, val caução)
 
 CLIENTE (nome (primeiro e último), número CC, email e telefone)
 
+------------------------------------------------
+
 **Associações:**
 trabalhaPara (EMPREGADO, DEPARTAMENTO) N:M
 
