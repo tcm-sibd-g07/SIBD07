@@ -31,7 +31,7 @@ aluga (CLIENTE, ARTIGO) N:M
 
 
 Exemplo de inserção de uma imagem:   
-![An alternative description](images/image02.png)   
+![An alternative description](images/Diagrama.jpeg)   
 
 Always add a description to help the user understand the figure 
 
