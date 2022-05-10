@@ -41,5 +41,5 @@ NOTA: Cada entidade-tipo e cada associação devem ter um pequeno texto – um o
 Alguns dos artigos não tem qualquer caução ou limite de horas de aluguer.
 
 ---
-[< Previous](rei02.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | Next >
+[< Previous](rei02.md) | [^ Main](https://github.com/tcm-sibd-g07/SIBD07/) | Next >
 :--- | :---: | ---: 
