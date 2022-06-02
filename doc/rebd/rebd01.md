@@ -7,8 +7,7 @@ A mesma está dividida em departamentos e cada departamento tem um nome, um núm
 
 ## Descrição dos requisitos do utilizador
 
-_(Descrever os tipos de utilizadores (actores) do sistema de informação e as funcionalidade (casos de uso) a que estes terão acesso. Permite refinar os requisitos apresentados no REI.)_
-
+O gerente é o único que tem acesso ao sistema da empresa, sendo que este verifica o stock dos vários artigos. 
 
 ---
 [< Previous](rebd00.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rebd02.md)
