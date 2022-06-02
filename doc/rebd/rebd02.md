@@ -5,6 +5,7 @@ _(Introduzir o diagrama do modelo Entidade-Associação. Podem apresentar altera
 
 ## Regras de negócio adicionais (Restrições)
 Alguns dos artigos não tem qualquer caução ou limite de horas de aluguer.
+
 O gerente deve fazer uma análise mensalmente relativamente aos alugueres efetuados no respetivo mês. 
 
 
