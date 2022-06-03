@@ -2,7 +2,7 @@
 
 ## Modelo E/A
 
-*ENTIDADES*:
+### ENTIDADES:
 
 Diagrama E/A 
 ![An alternative description](images/Diagrama2.jpeg)
