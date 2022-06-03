@@ -20,6 +20,10 @@ trabalhaPara (EMPREGADO, DEPARTAMENTO)
 
 pertence (EMPREGADO, DEPARTAMENTO)
 
+efetua (CLIENTE, ALUGUER)
+
+paraObter (ALUGUER, ARTIGO)
+
 
 
 Diagrama E/A 
