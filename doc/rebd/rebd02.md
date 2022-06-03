@@ -2,7 +2,7 @@
 
 ## Modelo E/A
 
-### ENTIDADES:
+### Entidades:
 
 Diagrama E/A 
 ![An alternative description](images/Diagrama2.jpeg)
