@@ -9,6 +9,8 @@ A mesma está dividida em departamentos e cada departamento tem um nome, um núm
 
 O gerente é o único que tem acesso ao sistema da empresa, sendo que este verifica o stock dos vários artigos. 
 
+O gerente é também o único que pode adicionar/remover artigos do sistema. 
+
 ---
 [< Previous](rebd00.md) | [^ Main](https://github.com/tcm-sibd-g07/SIBD07/) | [Next >](rebd02.md)
 :--- | :---: | ---: 
