@@ -33,7 +33,7 @@ aluga (CLIENTE, ARTIGO) N:M
 Diagrama E/A 
 ![An alternative description](images/Diagrama.jpeg)   
 
-Driagrama Entidade-Associação
+Diagrama Entidade-Associação
 
 
 ## Regras de negócio adicionais (Restrições)
