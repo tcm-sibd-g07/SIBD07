@@ -14,6 +14,13 @@ FUNCIONARIO (_id, n CC, nome (primeiro, ultimo), sexo, endereço, salario, dn)
 
 ALUGUER (data, entrega)
 
+### Associações:
+
+trabalhaPara (EMPREGADO, DEPARTAMENTO)
+
+pertence (EMPREGADO, DEPARTAMENTO)
+
+
 
 Diagrama E/A 
 ![An alternative description](images/DiagramaFinal.jpeg)
