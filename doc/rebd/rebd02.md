@@ -14,6 +14,8 @@ FUNCIONARIO (_id, n CC, nome (primeiro, ultimo), sexo, endereço, salario, dn)
 
 ALUGUER (data, entrega)
 
+PONTO_DE_ALUGUER (nome, _id, localização (rua, cidade, numero)
+
 ### Associações:
 
 trabalhaPara (EMPREGADO, DEPARTAMENTO)
