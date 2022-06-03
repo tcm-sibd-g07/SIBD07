@@ -5,7 +5,12 @@
 ### Entidades:
 
 ARTIGO (_codigo, nome, localizaçao, cauçao, tempo limite) 
-CLIENTE (
+
+CLIENTE (_codigo, n CC, telemovel, email, nome (primeiro, ultimo)
+
+DEPARTAMENTO (_numero, nome, *localizaçao (cidade, rua, numero))
+
+FUNCIONARIO (_id, n CC, nome (primeiro, ultimo), sexo, endereço, salario, dn)
 
 
 Diagrama E/A 
