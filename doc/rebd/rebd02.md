@@ -1,6 +1,9 @@
 # C2 : Esquema conceptual
 
 ## Modelo E/A
+
+*ENTIDADES*:
+
 Diagrama E/A 
 ![An alternative description](images/Diagrama2.jpeg)
 
