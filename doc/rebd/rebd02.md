@@ -16,7 +16,7 @@ ALUGUER (data, entrega)
 
 
 Diagrama E/A 
-![An alternative description](images/Diagrama2.jpeg)
+![An alternative description](images/DiagramaFinal.jpeg)
 
 ## Regras de negócio adicionais (Restrições)
 Alguns dos artigos não tem qualquer caução ou limite de horas de aluguer.
