@@ -1,7 +1,8 @@
 # C2 : Esquema conceptual
 
 ## Modelo E/A
-_(Introduzir o diagrama do modelo Entidade-Associação. Podem apresentar alterações ao diagrama apresentado no REI)_
+Diagrama E/A 
+![An alternative description](images/Diagrama2.jpeg)
 
 ## Regras de negócio adicionais (Restrições)
 Alguns dos artigos não tem qualquer caução ou limite de horas de aluguer.
