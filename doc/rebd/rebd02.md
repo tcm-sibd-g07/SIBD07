@@ -29,7 +29,7 @@ paraObter (ALUGUER, ARTIGO)
 
 
 Diagrama E/A 
-![An alternative description](images/DiagramaFinal.jpeg)
+![An alternative description](images/DiagramaDefinitivo.jpeg)
 
 ## Regras de negócio adicionais (Restrições)
 Alguns dos artigos não tem qualquer caução ou limite de horas de aluguer.
