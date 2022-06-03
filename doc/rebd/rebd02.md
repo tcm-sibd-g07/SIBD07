@@ -12,6 +12,8 @@ DEPARTAMENTO (_numero, nome, *localizaçao (cidade, rua, numero))
 
 FUNCIONARIO (_id, n CC, nome (primeiro, ultimo), sexo, endereço, salario, dn)
 
+ALUGUER (data, entrega)
+
 
 Diagrama E/A 
 ![An alternative description](images/Diagrama2.jpeg)
