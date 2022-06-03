@@ -4,6 +4,9 @@
 
 ### Entidades:
 
+ARTIGO (<sub>codigo</sub>, nome, localizaçao, cauçao, tempo limite) 
+
+
 Diagrama E/A 
 ![An alternative description](images/Diagrama2.jpeg)
 
