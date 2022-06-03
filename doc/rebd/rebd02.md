@@ -4,7 +4,8 @@
 
 ### Entidades:
 
-ARTIGO (<sub>codigo</sub>, nome, localizaçao, cauçao, tempo limite) 
+ARTIGO (_codigo, nome, localizaçao, cauçao, tempo limite) 
+CLIENTE (
 
 
 Diagrama E/A 
