@@ -20,11 +20,10 @@ PONTO_DE_ALUGUER (nome, _id, localização (codigoPostal, rua, porta, localidade
 
 
 ### Passo 2: Associações 1:1 
-
 Nao existem ligações 1:1
 
 
-### Passo 3: Associações 1:N  
+### Passo 3: Associações 1:N
 
 ARTIGO (_codigo, nome, cauçao, tempo limite)
 
@@ -42,6 +41,7 @@ DEPARTAMENTO (_numero, nome, *localizaçao (codigoPostal, rua, porta, localidade
 DEPARTAMENTO_FUNCIONARIO (_(#id, #numero), cargo))
 
 LINHA_ALUGUER (_(#codigo -> ARTIGO, #id -> ALUGUER), quantidade)
+
 
 
 
@@ -139,9 +139,9 @@ Não há alterações
 ## Relacoes 
 
 
-|Artigo     |      |      |         |
-|-----------|------|------|---------|
-|_Código|nome|caução|tempolimite|
+|Artigo|    |      |   |         |
+|-----------|----|------|---|
+|_Código      |nome|caução|tempolimite|
 
 |Cliente     |            |             |            |            |            |
 |-------------|------------|------------|------------|------------|------------|
