@@ -6,7 +6,7 @@
 
 ARTIGO (_codigo, nome, localizaçao, cauçao, tempo limite) 
 
-CLIENTE (_codigo, n CC, telemovel, email, nome (primeiro, ultimo)
+CLIENTE (_codigo, n CC, telemovel, email, nome (primeiro, ultimo))
 
 DEPARTAMENTO (_numero, nome, *localizaçao (cidade, rua, numero))
 
