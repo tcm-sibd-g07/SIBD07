@@ -94,7 +94,7 @@ DEPARTAMENTO (_numero, nome, codigoPostal, rua, porta, localidade, #_id -> PONTO
 
 DEPARTAMENTO_FUNCIONARIO (_(#id, #numero), cargo))
 
-LINHA_ALUGUER (_(#codigo -> ARTIGO, #idAluguer -> ALUGUER), quantidade)
+LINHA_ALUGUER (_(#codigo -> ARTIGO, #id -> ALUGUER), quantidade)
 
 
 ### 3ª Forma Normal (3NF)
@@ -114,7 +114,7 @@ DEPARTAMENTO (_numero, nome, #codigo_postal -> CODIGOS_POSTAIS, rua, porta, #_id
 
 DEPARTAMENTO_FUNCIONARIO (_(#id, #numero), cargo))
 
-LINHA_ALUGUER (_(#codigo -> ARTIGO, #idAluguer -> ALUGUER), quantidade)
+LINHA_ALUGUER (_(#codigo -> ARTIGO, #id -> ALUGUER), quantidade)
 
 CODIGOS_POSTAIS (_codigo_postal, localidade)
 
