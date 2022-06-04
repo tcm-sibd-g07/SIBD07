@@ -5,7 +5,7 @@
 ### Tabela
 
 
-![Tabela](images/TabelaArtigos.jpg)
+![Tabela](images/Esquema.png)
 
 
 
@@ -13,5 +13,5 @@
 
 
 ---
-| [< Previous](rebd03.md) | [^ Main](https://github.com/exemploTrabalho/reportSIBD/) | [Next >](rebd05.md) |
+| [< Previous](rebd03.md) | [^ Main](https://github.com/tcm-sibd-g07/SIBD07/) | [Next >](rebd05.md) |
 | :---------------------- | :------------------------------------------------------: | ------------------: |
