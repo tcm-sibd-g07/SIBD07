@@ -139,8 +139,8 @@ Não há alterações
 ## Relacoes 
 
 
-|Artigo|    |      |   |         |
-|-----------|----|------|---|
+|Artigo|    |      |      |         |
+|-----------|------|------|---------|
 |_Código|nome|caução|tempolimite|
 
 |Cliente     |            |             |            |            |            |
