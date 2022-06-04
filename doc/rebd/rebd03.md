@@ -106,7 +106,7 @@ CLIENTE (_codigo, nCC, telemovel, email, primeiro nome, ultimo nome)
 
 ALUGUER (_id, data, entrega, #_codigo-> ARTIGO, #_id -> PONTO_DE_ALUGUER, #_codigo -> CLIENTE)
  
-PONTO_DE_ALUGUER (nome, _id, #codigoPostal -> CODIGOS_POSTAIS, rua, porta, numero)
+PONTO_DE_ALUGUER (nome, _id, #codigoPostal -> CODIGOS_POSTAIS, rua, porta)
 
 FUNCIONARIO (_id, nCC, primeiro nome, ultimo nome, endereço, salario, dn, #_numero -> DEPARTAMENTO)
 
@@ -139,21 +139,21 @@ Não há alterações
 ## Relacoes 
 
 
-|Artigo|    |      |   |         |                   |
-|-----------|----|------|---|---------|-------------------|
-|_n.id      |nome|morada|nic|telefone*|#_parteDia -> Turno|
+|Artigo|    |      |   |         |
+|-----------|----|------|---|
+|_Código      |nome|caução|tempolimite|
 
-|Formacao     |            |    
-|-------------|------------|
-|_tipoFormacao|nomeFormacao|
+|Cliente     |            |             |            |            |            |
+|-------------|------------|------------|------------|------------|------------|
+|_Código|ncc|telemóvel|email|primeironome|ultimonome|
 
-|Turno    |    |                 |                    |
-|---------|----|-----------------|--------------------|
-|_parteDia|hora|#_gerencia->Turno|#_diaSemana->Horario|
+|Aluguer    |    |                 |                    |                  |                    |
+|---------|----|-----------------|--------------------|--------------------|--------------------|
+|_id|data|entrega|#_código->Artigo|#_id->Ponto_de_Aluguer|#_código->Cliente|
 
-|Horario   |       |          |      
-|----------|-------|----------|
-|_diaSemana|horaFim|horaInicio|
+|Ponto_De_Aluguer  |       |          |  |          |       
+|----------|-------|----------|----------|----------|
+|_id|nome|rua|porta|#_códigopostal->Código_Postais|
 
 |Seccao   |         |          |         |                        |           |
 |---------|---------|----------|---------|------------------------|-----------|
