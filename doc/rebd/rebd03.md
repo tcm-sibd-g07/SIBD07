@@ -70,6 +70,51 @@ Não existem Asscociações Ternárias
 ## Normalização do Esquema Relacional
 _(Apresentar o estudo da normalização das relações obtidas na secção anterior. Desnormalizar se necessário.)_
 
+### 1ª Forma Normal (1NF)
+
+ARTIGO (_codigo, nome, localizaçao, cauçao, tempo limite)
+
+CLIENTE (_codigo, n CC, telemovel, email, primeiro nome, ultimo nome)
+
+ALUGUER (_idAluguer, data, entrega, #_codigo-> ARTIGO, #_id -> PONTO_DE_ALUGUER, #_codigo -> CLIENTE)
+ 
+PONTO_DE_ALUGUER (nome, _id, rua, cidade, numero)
+
+Local(#_numero -> DEPARTAMENTO, localização)
+
+FUNCIONARIO (_id, n CC, primeiro nome, ultimo nome, sexo, endereço, salario, dn, #_numero -> DEPARTAMENTO)
+
+DEPARTAMENTO (_numero, nome, #_id -> PONTO_DE_ALUGUER, #_id -> FUNCIONARIO) 
+
+### 2ª Forma Normal (2NF)
+
+ARTIGO (_codigo, nome, localizaçao, cauçao, tempo limite)
+
+CLIENTE (_codigo, n CC, telemovel, email, primeiro nome, ultimo nome)
+
+ALUGUER (_idAluguer, data, entrega, #_codigo-> ARTIGO, #_id -> PONTO_DE_ALUGUER, #_codigo -> CLIENTE)
+ 
+PONTO_DE_ALUGUER (nome, _id, rua, cidade, numero)
+
+Local (#_numero -> DEPARTAMENTO, localização)
+
+FUNCIONARIO_DEPARTAMENTO (#_numero -> DEPARTAMNETO, _#id-> FUNCIONARIO)
+
+FUNCIONARIO (_id, n CC, primeiro nome, ultimo nome, sexo, endereço, salario, dn, #_numero -> DEPARTAMENTO)
+
+DEPARTAMENTO (_numero, nome, #_id -> PONTO_DE_ALUGUER, #_id -> FUNCIONARIO)
+
+### 3ª Forma Normal (3NF)
+
+IDENTIFICAÇÃO (_nCC, primeiro nome, ultimo nome)
+
+CLIENTE (_codigo, telemovel, email, #_nCC -> IDENTIFICAÇÃO)
+
+
+
+
+
+
 ## Relacoes 
 
 
