@@ -58,13 +58,13 @@ GO
 
 CREATE TABLE [dbo].[artigo](
 
-[codigoArtigo] [int] NOT NULL,
+    [codigoArtigo] [int] NOT NULL,
 
-[nome] [varchar](100) NOT NULL,
+    [nome] [varchar](100) NOT NULL,
 
-[caucao] [numeric](10, 2) NOT NULL,
+    [caucao] [numeric](10, 2) NOT NULL,
 
-[tempoLimite] [datetime] NOT NULL,
+    [tempoLimite] [datetime] NOT NULL,
 
 CONSTRAINT [PK_artigo] PRIMARY KEY CLUSTERED 
 
@@ -92,17 +92,17 @@ GO
 
 CREATE TABLE [dbo].[clientes](
 
-[codigoCliente] [int] NOT NULL,
+    [codigoCliente] [int] NOT NULL,
+    
+    [ncc] [bigint] NOT NULL,
 
-[ncc] [bigint] NOT NULL,
+    [telemovel] [bigint] NOT NULL,
 
-[telemovel] [bigint] NOT NULL,
+    [email] [varchar](100) NOT NULL,
 
-[email] [varchar](100) NOT NULL,
+    [primeiroNome] [varchar](50) NOT NULL,
 
-[primeiroNome] [varchar](50) NOT NULL,
-
-[ultimoNome] [varchar](50) NOT NULL,
+    [ultimoNome] [varchar](50) NOT NULL,
 
 CONSTRAINT [PK_clientes] PRIMARY KEY CLUSTERED 
 
@@ -130,10 +130,10 @@ GO
 
 CREATE TABLE [dbo].[codPostais](
 
-[codPostal] [int] NOT NULL,
+    [codPostal] [int] NOT NULL,
 
-[localidade] [varchar](100) NULL,
-
+    [localidade] [varchar](100) NULL,
+    
 CONSTRAINT [PK_codPostais] PRIMARY KEY CLUSTERED 
 
 (
@@ -160,17 +160,17 @@ GO
 
 CREATE TABLE [dbo].[departamento](
 
-[numeroDepar] [int] NOT NULL,
+    [numeroDepar] [int] NOT NULL,
 
-[nome] [varchar](100) NOT NULL,
+    [nome] [varchar](100) NOT NULL,
 
-[codPostal] [int] NOT NULL,
+    [codPostal] [int] NOT NULL,
 
-[rua] [varchar](100) NOT NULL,
+    [rua] [varchar](100) NOT NULL,
 
-[porta] [int] NOT NULL,
+    [porta] [int] NOT NULL,
 
-[id_pontoAluguer] [int] NOT NULL,
+    [id_pontoAluguer] [int] NOT NULL,
 
 CONSTRAINT [PK_departamento] PRIMARY KEY CLUSTERED 
 
@@ -218,19 +218,19 @@ GO
 
 CREATE TABLE [dbo].[funcionario](
 
-[idFuncionario] [int] NOT NULL,
+    [idFuncionario] [int] NOT NULL,
 
-[nCC] [bigint] NOT NULL,
+    [nCC] [bigint] NOT NULL,
 
-[primeiroNome] [varchar](50) NOT NULL,
+    [primeiroNome] [varchar](50) NOT NULL,
 
-[ultimoNome] [varchar](50) NOT NULL,
+    [ultimoNome] [varchar](50) NOT NULL,
 
-[salario] [numeric](10, 2) NOT NULL,
+    [salario] [numeric](10, 2) NOT NULL,
 
-[email] [varchar](100) NOT NULL,
+    [email] [varchar](100) NOT NULL,
 
-[dataNasc] [date] NOT NULL,
+    [dataNasc] [date] NOT NULL,
 
 CONSTRAINT [PK_funcionario] PRIMARY KEY CLUSTERED 
 
@@ -258,11 +258,11 @@ GO
 
 CREATE TABLE [dbo].[funcionario_departamento](
 
-[idFuncionario] [int] NOT NULL,
+    [idFuncionario] [int] NOT NULL,
 
-[idDepartamento] [int] NOT NULL,
+    [idDepartamento] [int] NOT NULL,
 
-[cargo] [varchar](100) NOT NULL,
+    [cargo] [varchar](100) NOT NULL,
 
 CONSTRAINT [PK_funcionario_departamento] PRIMARY KEY CLUSTERED 
 
@@ -312,11 +312,11 @@ GO
 
 CREATE TABLE [dbo].[linhaAluguer](
 
-[id_aluguer] [int] NOT NULL,
+    [id_aluguer] [int] NOT NULL,
 
-[id_artigo] [int] NOT NULL,
+    [id_artigo] [int] NOT NULL,
 
-[quantidade] [int] NOT NULL,
+    [quantidade] [int] NOT NULL,
 
 CONSTRAINT [PK_linhaAluguer] PRIMARY KEY CLUSTERED 
 
@@ -365,15 +365,15 @@ GO
 
 CREATE TABLE [dbo].[pontoAluguer](
 
-[idPontoAluguer] [int] NOT NULL,
+    [idPontoAluguer] [int] NOT NULL,
 
-[nome] [varchar](100) NOT NULL,
+    [nome] [varchar](100) NOT NULL,
 
-[codPostal] [int] NOT NULL,
+    [codPostal] [int] NOT NULL,
 
-[rua] [varchar](100) NOT NULL,
+    [rua] [varchar](100) NOT NULL,
 
-[porta] [int] NOT NULL,
+    [porta] [int] NOT NULL,
 
 CONSTRAINT [PK_pontoAluguer] PRIMARY KEY CLUSTERED 
 
