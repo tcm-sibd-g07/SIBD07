@@ -63,45 +63,75 @@ _(Apresentar o estudo da normalização das relações obtidas na secção anter
 
 ### 1ª Forma Normal (1NF)
 
-ARTIGO (_codigo, nome, localizaçao, cauçao, tempo limite)
+ARTIGO (_codigo, nome, cauçao, tempo limite)
 
-CLIENTE (_codigo, n CC, telemovel, email, primeiro nome, ultimo nome)
+CLIENTE (_codigo, nCC, telemovel, email, primeiro nome, ultimo nome)
 
-ALUGUER (_idAluguer, data, entrega, #_codigo-> ARTIGO, #_id -> PONTO_DE_ALUGUER, #_codigo -> CLIENTE)
+ALUGUER (_id, data, entrega, #_codigo-> ARTIGO, #_id -> PONTO_DE_ALUGUER, #_codigo -> CLIENTE)
  
-PONTO_DE_ALUGUER (nome, _id, rua, cidade, numero)
+PONTO_DE_ALUGUER (nome, _id, codigoPostal, rua, porta, localidade)
 
-Local(#_numero -> DEPARTAMENTO, localização)
+FUNCIONARIO (_id, nCC, primeiro nome, ultimo nome, endereço, salario, dn, #_numero -> DEPARTAMENTO)
 
-FUNCIONARIO (_id, n CC, primeiro nome, ultimo nome, sexo, endereço, salario, dn, #_numero -> DEPARTAMENTO)
+DEPARTAMENTO (_numero, nome, codigoPostal, rua, porta, localidade, #_id -> PONTO_DE_ALUGUER, #_id -> FUNCIONARIO)
 
-DEPARTAMENTO (_numero, nome, #_id -> PONTO_DE_ALUGUER, #_id -> FUNCIONARIO) 
+LINHA_ALUGUER (_(#codigo -> ARTIGO, #idAluguer -> ALUGUER), quantidade)
+
 
 ### 2ª Forma Normal (2NF)
 
-ARTIGO (_codigo, nome, localizaçao, cauçao, tempo limite)
+ARTIGO (_codigo, nome, cauçao, tempo limite)
 
-CLIENTE (_codigo, n CC, telemovel, email, primeiro nome, ultimo nome)
+CLIENTE (_codigo, nCC, telemovel, email, primeiro nome, ultimo nome)
 
-ALUGUER (_idAluguer, data, entrega, #_codigo-> ARTIGO, #_id -> PONTO_DE_ALUGUER, #_codigo -> CLIENTE)
+ALUGUER (_id, data, entrega, #_codigo-> ARTIGO, #_id -> PONTO_DE_ALUGUER, #_codigo -> CLIENTE)
  
-PONTO_DE_ALUGUER (nome, _id, rua, cidade, numero)
+PONTO_DE_ALUGUER (nome, _id, codigoPostal, rua, porta, localidade)
 
-Local (#_numero -> DEPARTAMENTO, localização)
+FUNCIONARIO (_id, nCC, primeiro nome, ultimo nome, endereço, salario, dn, #_numero -> DEPARTAMENTO)
 
-FUNCIONARIO_DEPARTAMENTO (#_numero -> DEPARTAMNETO, _#id-> FUNCIONARIO)
+DEPARTAMENTO (_numero, nome, codigoPostal, rua, porta, localidade, #_id -> PONTO_DE_ALUGUER, #_id -> FUNCIONARIO)
 
-FUNCIONARIO (_id, n CC, primeiro nome, ultimo nome, sexo, endereço, salario, dn, #_numero -> DEPARTAMENTO)
+DEPARTAMENTO_FUNCIONARIO (_(#id, #numero), cargo))
 
-DEPARTAMENTO (_numero, nome, #_id -> PONTO_DE_ALUGUER, #_id -> FUNCIONARIO)
+LINHA_ALUGUER (_(#codigo -> ARTIGO, #idAluguer -> ALUGUER), quantidade)
+
 
 ### 3ª Forma Normal (3NF)
 
-IDENTIFICAÇÃO (_nCC, primeiro nome, ultimo nome)
 
-CLIENTE (_codigo, telemovel, email, #_nCC -> IDENTIFICAÇÃO)
+ARTIGO (_codigo, nome, cauçao, tempo limite)
+
+CLIENTE (_codigo, nCC, telemovel, email, primeiro nome, ultimo nome)
+
+ALUGUER (_id, data, entrega, #_codigo-> ARTIGO, #_id -> PONTO_DE_ALUGUER, #_codigo -> CLIENTE)
+ 
+PONTO_DE_ALUGUER (nome, _id, #codigoPostal -> CODIGOS_POSTAIS, rua, porta)
+
+FUNCIONARIO (_id, nCC, primeiro nome, ultimo nome, endereço, salario, dn, #_numero -> DEPARTAMENTO)
+
+DEPARTAMENTO (_numero, nome, #codigo_postal -> CODIGOS_POSTAIS, rua, porta, #_id -> PONTO_DE_ALUGUER, #_id -> FUNCIONARIO)
+
+DEPARTAMENTO_FUNCIONARIO (_(#id, #numero), cargo))
+
+LINHA_ALUGUER (_(#codigo -> ARTIGO, #idAluguer -> ALUGUER), quantidade)
+
+CODIGOS_POSTAIS (_codigo_postal, localidade)
 
 
+
+
+
+
+
+### Forma Normal de Boyce-Codd (BCNF)
+
+Não há alterações
+
+
+### 4ª Forma Normal (4NF)
+
+Não há alterações
 
 
 
