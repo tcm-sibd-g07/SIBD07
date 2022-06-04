@@ -32,7 +32,7 @@ faz (PONTO_DE_ALUGUER, ALUGUER) 1:N  P/
 
 
 Diagrama E/A 
-![An alternative description](images/DiagramaCorrigido2.jpeg)
+![An alternative description](images/DiagramaCorrigido22.jpeg)
 
 ## Regras de negócio adicionais (Restrições)
 Alguns dos artigos não tem qualquer caução ou limite de horas de aluguer.
