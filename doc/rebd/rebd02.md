@@ -18,13 +18,13 @@ PONTO_DE_ALUGUER (nome, _id, localização (rua, cidade, numero))
 
 ### Associações:
 
-trabalhaPara (EMPREGADO, DEPARTAMENTO)
+trabalhaPara (FUNCIONARIO, DEPARTAMENTO) N:M  P/
 
-efetua (CLIENTE, ALUGUER)
+efetua (CLIENTE, ALUGUER) 1:N  P/
 
-paraObter (ALUGUER, ARTIGO)
+paraObter (ALUGUER, ARTIGO) 
 
-faz (PONTO_DE_ALUGUER, ALUGUER) 
+faz (PONTO_DE_ALUGUER, ALUGUER) 1:N  P/
 
 
 
