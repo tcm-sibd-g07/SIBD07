@@ -5,7 +5,7 @@
 ### Tabela
 
 
-![Tabela](imagens/TabelaArtigos.jpeg)
+![Tabela](imagens/TabelaArtigos.jpg)
 
 
 
