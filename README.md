@@ -12,6 +12,7 @@ Uma empresa de aluguer de artigos de praia pretende melhorar o seu sistema para 
 ## Reports
 
 :[REI](doc/rei/rei00.md)
+:[REBD](doc/rebd/rebd00.md)
 
 ## Team
 * Lucas Baptista [@LucasBaptista](https://github.com/Ziimaz)
