@@ -2,8 +2,7 @@
 
 ### Tabela Artigo
 
-![An alternative description](imagens/tabela1.png)
-![An alternative description](imagens/tabela2.png)
+![An alternative description](imagens/TabelaAertigos.jpg)
 
 
 #### Mencione os nomes dos artigos cuja caução é de 200.
