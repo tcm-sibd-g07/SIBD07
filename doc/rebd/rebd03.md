@@ -106,7 +106,7 @@ CLIENTE (_codigo, nCC, telemovel, email, primeiro nome, ultimo nome)
 
 ALUGUER (_id, data, entrega, #_codigo-> ARTIGO, #_id -> PONTO_DE_ALUGUER, #_codigo -> CLIENTE)
  
-PONTO_DE_ALUGUER (nome, _id, #codigoPostal -> CODIGOS_POSTAIS, rua, porta)
+PONTO_DE_ALUGUER (nome, _id, #codigoPostal -> CODIGOS_POSTAIS, rua, porta, numero)
 
 FUNCIONARIO (_id, nCC, primeiro nome, ultimo nome, endereço, salario, dn, #_numero -> DEPARTAMENTO)
 
