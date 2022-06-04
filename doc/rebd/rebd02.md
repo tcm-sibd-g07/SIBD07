@@ -4,7 +4,7 @@
 
 ### Entidades:
 
-ARTIGO (_codigo, nome, localizaçao, cauçao, tempo limite) 
+ARTIGO (_codigo, nome, localizaçao, cauçao, tempo limite, quantidade) 
 
 CLIENTE (_codigo, n CC, telemovel, email, nome (primeiro, ultimo))
 
