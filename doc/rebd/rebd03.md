@@ -139,7 +139,7 @@ Não há alterações
 ## Relacoes 
 
 
-|Artigo|    |      |   |         |
+|Artigo     |      |      |
 |-----------|----|------|---|
 |_Código      |nome|caução|tempolimite|
 
@@ -151,44 +151,31 @@ Não há alterações
 |---------|----|-----------------|--------------------|--------------------|--------------------|
 |_id|data|entrega|#_código->Artigo|#_id->Ponto_de_Aluguer|#_código->Cliente|
 
-|Ponto_De_Aluguer  |       |          |  |          |       
+|Ponto_De_Aluguer  |       |          |  |          |
 |----------|-------|----------|----------|----------|
 |_id|nome|rua|porta|#_códigopostal->Código_Postais|
 
-|Seccao   |         |          |         |                        |           |
-|---------|---------|----------|---------|------------------------|-----------|
-|_gerencia|cosmetico|fornecedor|reposicao|caixa|perfumaria|limpeza|maquilhagem|
+|Funcionário  |         |          |         |                        |           |       |           |
+|---------|---------|----------|---------|------------------------|-----------|-----------|-----------|
+|_id|ncc|primeironome|ultimonome|endereço|salário|dn|#_numero->Departamento|
 
-|Fornecedor|    |         |         |
-|----------|----|---------|---------|
-|_id       |nome|tipoStock|telefone*|
-
-
-|Produto|    |           |        |
-|-------|----|-----------|--------|
-|_codigo|nome|tipoProduto|validade|
-
-|Entrega     |        |       |          |                |
-|------------|--------|-------|----------|----------------|
-|_tipoProduto|validade|reserva|quantidade|#_id->Fornecedor|
+|Departamento|    |         |         |       |         |         |
+|----------|----|---------|---------|---------|---------|---------|
+|_numero      |nome|#_código_Postal->Códigos_Postais|rua|porta|#_id->Ponto_De_Aluguer|#_id->Funcionário
 
 
-|PrecisaDe          |                        |
+|DepartamentoFuncionário|    |           |
+|-------|----|-----------|
+|#id|_#numero|cargo|
+
+|LinhaAluguer     |        |       |
+|------------|--------|-------|
+|#_código->Artigo|#_id->Aluguer|quantidade|
+
+
+|Códigos_Postais         |                        |
 |-------------------|------------------------|
-|#_n.id->Funcionario|#_tipoFormacao->Formacao|
-
-|Envia                 |                 |        
-|----------------------|-----------------|
-|#_tipoProduto->Entrega|#_codigo->Produto|
-
-|Contacto           |                 |        |
-|-------------------|-----------------|--------|
-|#_n.id->Funcionario|#_codigo->Produto|telefone|
-
-|Tem             |                  |                     |             
-|----------------|------------------|---------------------|
-|#_id->Fornecedor|#_gerencia->Seccao|#p_diaSemana->Horario|
-
+|_código_postal|localidade|
 ---
 [< Previous](rebd02.md) | [^ Main](https://github.com/tcm-sibd-g07/SIBD07/) | [Next >](rebd04.md)
 :--- | :---: | ---: 
