@@ -4,17 +4,18 @@
 
 ### Entidades:
 
-ARTIGO (_codigo, nome, localizaçao, cauçao, tempo limite, quantidade) 
+ARTIGO (_codigo, nome, cauçao, tempo limite)
 
-CLIENTE (_codigo, n CC, telemovel, email, nome (primeiro, ultimo))
+CLIENTE (_codigo, nCC, telemovel, email, nome (primeiro, ultimo)
 
-DEPARTAMENTO (_numero, nome, *localizaçao (cidade, rua, numero))
+DEPARTAMENTO (_numero, nome, *localizaçao (codigoPostal, rua, porta, localidade))
 
-FUNCIONARIO (_id, n CC, nome (primeiro, ultimo), sexo, endereço, salario, dn)
+FUNCIONARIO (_id, nCC, nome (primeiro, ultimo), endereço, salario, dn)
 
-ALUGUER (data, entrega)
+ALUGUER (_id, data, entrega)
 
-PONTO_DE_ALUGUER (nome, _id, localização (rua, cidade, numero))
+PONTO_DE_ALUGUER (nome, _id, localização (codigoPostal, rua, porta, localidade))
+
 
 ### Associações:
 
@@ -34,7 +35,7 @@ faz (PONTO_DE_ALUGUER, ALUGUER) 1:N  P/P
 
 
 Diagrama E/A 
-![An alternative description](images/DiagramaRetificadoFinal.jpeg)
+![An alternative description](images/DiagramaOriginal.jpeg)
 
 ## Regras de negócio adicionais (Restrições)
 Alguns dos artigos não tem qualquer caução ou limite de horas de aluguer.
