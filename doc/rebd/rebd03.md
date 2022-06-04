@@ -6,53 +6,44 @@
 
 ### Passo 1: Entidades e Atributos
 
-ARTIGO (_codigo, nome, localizaçao, cauçao, tempo limite)
+ARTIGO (_codigo, nome, cauçao, tempo limite)
 
-CLIENTE (_codigo, n CC, telemovel, email, nome (primeiro, ultimo)
+CLIENTE (_codigo, nCC, telemovel, email, nome (primeiro, ultimo)
 
-DEPARTAMENTO (_numero, nome, *localizaçao (cidade, rua, numero))
+DEPARTAMENTO (_numero, nome, *localizaçao (codigoPostal, rua, porta, localidade))
 
-FUNCIONARIO (_id, n CC, nome (primeiro, ultimo), sexo, endereço, salario, dn)
+FUNCIONARIO (_id, nCC, nome (primeiro, ultimo), endereço, salario, dn)
 
-ALUGUER (_idAluguer, data, entrega)
+ALUGUER (_id, data, entrega)
 
-PONTO_DE_ALUGUER (nome, _id, localização (rua, cidade, numero))
+PONTO_DE_ALUGUER (nome, _id, localização (codigoPostal, rua, porta, localidade))
 
-### Passo 2: Associações 1:1
 
-Não existem associações de cardinalidade 1:1
+### Passo 2: Associações 1:1 
+
+Nao existem ligações 1:1
+
 
 ### Passo 3: Associações 1:N
 
-ARTIGO (_codigo, nome, localizaçao, cauçao, tempo limite)
+ARTIGO (_codigo, nome, cauçao, tempo limite)
 
-CLIENTE (_codigo, n CC, telemovel, email, nome (primeiro, ultimo)
+CLIENTE (_codigo, nCC, telemovel, email, nome (primeiro, ultimo))
 
-ALUGUER (_idAluguer, data, entrega, #_codigo-> ARTIGO, #_id -> PONTO_DE_ALUGUER, #_codigo -> CLIENTE)
+ALUGUER (_id, data, entrega, #_codigo-> ARTIGO, #_id -> PONTO_DE_ALUGUER, #_codigo -> CLIENTE)
  
-PONTO_DE_ALUGUER (nome, _id, localização (rua, cidade, numero))
+PONTO_DE_ALUGUER (nome, _id, localização (codigoPostal, rua, porta, localidade))
 
-DEPARTAMENTO (_numero, nome, *localizaçao (cidade, rua, numero), #_id -> PONTO_DE_ALUGUER)
+DEPARTAMENTO (_numero, nome, *localizaçao (codigoPostal, rua, porta, localidade), #_id -> PONTO_DE_ALUGUER)
+
 
 ### Passo 4: Associações N:M
 
-DEPARTAMENTO (_numero, nome, *localizaçao (cidade, rua, numero), #_id -> PONTO_DE_ALUGUER, #_id -> FUNCIONARIO)
+DEPARTAMENTO_FUNCIONARIO (_(#id, #numero), cargo))
 
-FUNCIONARIO (_id, n CC, nome (primeiro, ultimo), sexo, endereço, salario, dn, #_numero -> DEPARTAMENTO)
+LINHA_ALUGUER (_(#codigo -> ARTIGO, #id -> ALUGUER), quantidade)
 
-### Passo 5: Atributo Multivalor
 
-Local(#_numero -> DEPARTAMENTO, localização)
-
-DEPARTAMENTO (_numero, nome, #_id -> PONTO_DE_ALUGUER, #_id -> FUNCIONARIO) 
-
-FUNCIONARIO (_id, n CC, nome (primeiro, ultimo), sexo, endereço, salario, dn, #_numero -> DEPARTAMENTO)
-
-### Passo 6: Associação ternária
-
-Não existem Asscociações Ternárias
-
-### Passo 7: Entidades Fracas
 
 
 
