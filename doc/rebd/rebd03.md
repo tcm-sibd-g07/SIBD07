@@ -1,7 +1,13 @@
 # C3 : Normalização
 
 ## Relações
-_(Apresentar as relações obtidas da transformação direta a partir do modelo EA)_
+
+## Conversão do Modelo EA para Modelo Relacional
+
+### Passo 1: Entidades e Atributos
+
+
+
 
 ## Normalização do Esquema Relacional
 _(Apresentar o estudo da normalização das relações obtidas na secção anterior. Desnormalizar se necessário.)_
