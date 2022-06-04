@@ -20,11 +20,14 @@ PONTO_DE_ALUGUER (nome, _id, localização (rua, cidade, numero)
 
 trabalhaPara (EMPREGADO, DEPARTAMENTO)
 
-pertence (EMPREGADO, DEPARTAMENTO)
-
 efetua (CLIENTE, ALUGUER)
 
 paraObter (ALUGUER, ARTIGO)
+
+faz (PONTO_DE_ALUGUER, ALUGUER) 
+
+
+
 
 
 
