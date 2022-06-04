@@ -24,7 +24,7 @@ PONTO_DE_ALUGUER (nome, _id, localização (codigoPostal, rua, porta, localidade
 Nao existem ligações 1:1
 
 
-### Passo 3: Associações 1:N
+### Passo 3: Associações 1:N  
 
 ARTIGO (_codigo, nome, cauçao, tempo limite)
 
