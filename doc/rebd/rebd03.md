@@ -141,7 +141,7 @@ Não há alterações
 
 |Artigo|    |      |   |         |
 |-----------|----|------|---|
-|_Código      |nome|caução|tempolimite|
+|_Código|nome|caução|tempolimite|
 
 |Cliente     |            |             |            |            |            |
 |-------------|------------|------------|------------|------------|------------|
