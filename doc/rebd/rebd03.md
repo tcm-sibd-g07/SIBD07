@@ -166,7 +166,7 @@ Não há alterações
 
 |DepartamentoFuncionário|    |           |
 |-------|----|-----------|
-|#<ins>id</ins>|#<ins>numero</ins>->DEPARTAMENTO|cargo|
+|#<ins>id</ins>->FUNCIONARIO|#<ins>numero</ins>->DEPARTAMENTO|cargo|
 
 |LinhaAluguer     |        |       |
 |------------|--------|-------|
@@ -175,7 +175,7 @@ Não há alterações
 
 |Códigos_Postais         |                        |
 |-------------------|------------------------|
-|_código_postal|localidade|
+|<ins>código_postal</ins>|localidade|
 ---
 [< Previous](rebd02.md) | [^ Main](https://github.com/tcm-sibd-g07/SIBD07/) | [Next >](rebd04.md)
 :--- | :---: | ---: 
