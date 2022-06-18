@@ -46,6 +46,51 @@ LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), quanti
 
 
 
+## Relacoes 
+
+
+|Artigo     |      |      |      |
+|-----------|----|------|---|
+|<ins>Código</ins>|nome|caução|tempolimite|
+
+|Cliente     |            |             |            |            |            |
+|-------------|------------|------------|------------|------------|------------|
+|<ins>Código</ins>|ncc|telemóvel|email|primeironome|ultimonome|
+
+|Aluguer    |    |                 |                    |                  |                    |
+|---------|----|-----------------|--------------------|--------------------|--------------------|
+|<ins>id</ins>|data|entrega|#<ins>código</ins>->Artigo|#<ins>id</ins>->Ponto_de_Aluguer|#<ins>código</ins>->Cliente|
+
+|Ponto_De_Aluguer  |       |          |  |          |
+|----------|-------|----------|----------|----------|
+|<ins>id</ins>|nome|rua|porta|#<ins>códigopostal</ins>->Código_Postais|
+
+|Funcionário  |         |          |         |                        |           |       |           |
+|---------|---------|----------|---------|------------------------|-----------|-----------|-----------|
+|<ins>id</ins>|ncc|primeironome|ultimonome|endereço|salário|dn|#<ins>numero</ins>->Departamento|
+
+|Departamento|    |         |         |       |         |         |
+|----------|----|---------|---------|---------|---------|---------|
+|<ins>numero</ins>      |nome|#<ins>código_Postal</ins>->Códigos_Postais|rua|porta|#<ins>id</ins>->Ponto_De_Aluguer|#<ins>id</ins>->Funcionário
+
+
+|DepartamentoFuncionário|    |           |
+|-------|----|-----------|
+|#<ins>id</ins>->Funcionario|#<ins>numero</ins>->DEPARTAMENTO|cargo|
+
+|LinhaAluguer     |        |       |
+|------------|--------|-------|
+|#<ins>código</ins>->Artigo|#<ins>id</ins>->Aluguer|quantidade|
+
+
+|Códigos_Postais         |                        |
+|-------------------|------------------------|
+|<ins>código_postal</ins>|localidade|
+
+
+
+
+
 
 
 
@@ -124,6 +169,10 @@ CODIGOS_POSTAIS (<ins>codigo_postal</ins>, localidade)
 
 
 
+
+
+
+
 ### Forma Normal de Boyce-Codd (BCNF)
 
 Não há alterações
@@ -134,48 +183,6 @@ Não há alterações
 Não há alterações
 
 
-
-
-## Relacoes 
-
-
-|Artigo     |      |      |      |
-|-----------|----|------|---|
-|<ins>Código</ins>|nome|caução|tempolimite|
-
-|Cliente     |            |             |            |            |            |
-|-------------|------------|------------|------------|------------|------------|
-|<ins>Código</ins>|ncc|telemóvel|email|primeironome|ultimonome|
-
-|Aluguer    |    |                 |                    |                  |                    |
-|---------|----|-----------------|--------------------|--------------------|--------------------|
-|<ins>id</ins>|data|entrega|#<ins>código</ins>->Artigo|#<ins>id</ins>->Ponto_de_Aluguer|#<ins>código</ins>->Cliente|
-
-|Ponto_De_Aluguer  |       |          |  |          |
-|----------|-------|----------|----------|----------|
-|<ins>id</ins>|nome|rua|porta|#<ins>códigopostal</ins>->Código_Postais|
-
-|Funcionário  |         |          |         |                        |           |       |           |
-|---------|---------|----------|---------|------------------------|-----------|-----------|-----------|
-|<ins>id</ins>|ncc|primeironome|ultimonome|endereço|salário|dn|#<ins>numero</ins>->Departamento|
-
-|Departamento|    |         |         |       |         |         |
-|----------|----|---------|---------|---------|---------|---------|
-|<ins>numero</ins>      |nome|#<ins>código_Postal</ins>->Códigos_Postais|rua|porta|#<ins>id</ins>->Ponto_De_Aluguer|#<ins>id</ins>->Funcionário
-
-
-|DepartamentoFuncionário|    |           |
-|-------|----|-----------|
-|#<ins>id</ins>->Funcionario|#<ins>numero</ins>->DEPARTAMENTO|cargo|
-
-|LinhaAluguer     |        |       |
-|------------|--------|-------|
-|#<ins>código</ins>->Artigo|#<ins>id</ins>->Aluguer|quantidade|
-
-
-|Códigos_Postais         |                        |
-|-------------------|------------------------|
-|<ins>código_postal</ins>|localidade|
 ---
 [< Previous](rebd02.md) | [^ Main](https://github.com/tcm-sibd-g07/SIBD07/) | [Next >](rebd04.md)
 :--- | :---: | ---: 
