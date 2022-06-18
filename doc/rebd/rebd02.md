@@ -8,13 +8,13 @@ ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
 
 CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, nome (primeiro, ultimo)
 
-DEPARTAMENTO (<ins>numero</ins>, nome, *localizaçao (codigoPostal, rua, porta, localidade))
+DEPARTAMENTO (<ins>numero</ins>, nome, {localizaçao (codigoPostal, rua, porta, localidade)})
 
 FUNCIONARIO (<ins>id</ins>, nCC, nome (primeiro, ultimo), endereço, salario, dn)
 
 ALUGUER (<ins>id</ins>, data, entrega)
 
-PONTO_DE_ALUGUER (nome, <ins>id</ins>, localização (codigoPostal, rua, porta, localidade))
+PONTO_DE_ALUGUER (nome, <ins>id</ins>, {localização (codigoPostal, rua, porta, localidade)})
 
 
 ### Associações:
