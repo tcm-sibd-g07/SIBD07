@@ -38,9 +38,9 @@ DEPARTAMENTO (<ins>numero</ins>, nome, {localizaçao (codigoPostal, rua, porta, 
 
 ### Passo 4: Associações N:M
 
-DEPARTAMENTO_FUNCIONARIO (_(#id, #numero), cargo))
+DEPARTAMENTO_FUNCIONARIO ((#<ins>id</ins> -> FUNCIONARIO, #<ins>numero</ins> -> DEPARTAMENTO), cargo))
 
-LINHA_ALUGUER (_(#codigo -> ARTIGO, #id -> ALUGUER), quantidade)
+LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), quantidade)
 
 
 
@@ -63,60 +63,60 @@ _(Apresentar o estudo da normalização das relações obtidas na secção anter
 
 ### 1ª Forma Normal (1NF)
 
-ARTIGO (_codigo, nome, cauçao, tempo limite)
+ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
 
-CLIENTE (_codigo, nCC, telemovel, email, primeiro nome, ultimo nome)
+CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, primeiro nome, ultimo nome)
 
-ALUGUER (_id, data, entrega, #_codigo-> ARTIGO, #_id -> PONTO_DE_ALUGUER, #_codigo -> CLIENTE)
+ALUGUER (<ins>id</ins>, data, entrega, #<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
  
-PONTO_DE_ALUGUER (nome, _id, codigoPostal, rua, porta, localidade)
+PONTO_DE_ALUGUER (nome, <ins>id</ins>, codigoPostal, rua, porta, localidade)
 
-FUNCIONARIO (_id, nCC, primeiro nome, ultimo nome, endereço, salario, dn, #_numero -> DEPARTAMENTO)
+FUNCIONARIO (<ins>id</ins>, nCC, primeiro nome, ultimo nome, endereço, salario, dn, #<ins>numero</ins> -> DEPARTAMENTO)
 
-DEPARTAMENTO (_numero, nome, codigoPostal, rua, porta, localidade, #_id -> PONTO_DE_ALUGUER, #_id -> FUNCIONARIO)
+DEPARTAMENTO (<ins>numero</ins>, nome, codigoPostal, rua, porta, localidade, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>id</ins> -> FUNCIONARIO)
 
-LINHA_ALUGUER (_(#codigo -> ARTIGO, #idAluguer -> ALUGUER), quantidade)
+LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>idAluguer</ins> -> ALUGUER), quantidade)
 
 
 ### 2ª Forma Normal (2NF)
 
-ARTIGO (_codigo, nome, cauçao, tempo limite)
+ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
 
-CLIENTE (_codigo, nCC, telemovel, email, primeiro nome, ultimo nome)
+CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, primeiro nome, ultimo nome)
 
-ALUGUER (_id, data, entrega, #_codigo-> ARTIGO, #_id -> PONTO_DE_ALUGUER, #_codigo -> CLIENTE)
+ALUGUER (<ins>id</ins>, data, entrega, #<ins>codigo</ins>-> ARTIGO, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
  
-PONTO_DE_ALUGUER (nome, _id, codigoPostal, rua, porta, localidade)
+PONTO_DE_ALUGUER (nome, <ins>id</ins>, codigoPostal, rua, porta, localidade)
 
-FUNCIONARIO (_id, nCC, primeiro nome, ultimo nome, endereço, salario, dn, #_numero -> DEPARTAMENTO)
+FUNCIONARIO (<ins>id</ins>, nCC, primeiro nome, ultimo nome, endereço, salario, dn, #<ins>numero</ins> -> DEPARTAMENTO)
 
-DEPARTAMENTO (_numero, nome, codigoPostal, rua, porta, localidade, #_id -> PONTO_DE_ALUGUER, #_id -> FUNCIONARIO)
+DEPARTAMENTO (<ins>numero</ins>, nome, codigoPostal, rua, porta, localidade, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>id</ins> -> FUNCIONARIO)
 
-DEPARTAMENTO_FUNCIONARIO (_(#id, #numero), cargo))
+DEPARTAMENTO_FUNCIONARIO ((#<ins>id</ins> -> FUNCIONARIO, #<ins>numero</ins> -> DEPARTAMENTO), cargo))
 
-LINHA_ALUGUER (_(#codigo -> ARTIGO, #id -> ALUGUER), quantidade)
+LINHA_ALUGUER (_(#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), quantidade)
 
 
 ### 3ª Forma Normal (3NF)
 
 
-ARTIGO (_codigo, nome, cauçao, tempo limite)
+ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
 
-CLIENTE (_codigo, nCC, telemovel, email, primeiro nome, ultimo nome)
+CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, primeiro nome, ultimo nome)
 
-ALUGUER (_id, data, entrega, #_codigo-> ARTIGO, #_id -> PONTO_DE_ALUGUER, #_codigo -> CLIENTE)
+ALUGUER (<ins>id</ins>, data, entrega, #<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
  
-PONTO_DE_ALUGUER (nome, _id, #codigoPostal -> CODIGOS_POSTAIS, rua, porta)
+PONTO_DE_ALUGUER (nome, <ins>id</ins>, #codigoPostal -> CODIGOS_POSTAIS, rua, porta)
 
-FUNCIONARIO (_id, nCC, primeiro nome, ultimo nome, endereço, salario, dn, #_numero -> DEPARTAMENTO)
+FUNCIONARIO (<ins>id</ins>, nCC, primeiro nome, ultimo nome, endereço, salario, dn, #<ins>numero</ins> -> DEPARTAMENTO)
 
-DEPARTAMENTO (_numero, nome, #codigo_postal -> CODIGOS_POSTAIS, rua, porta, #_id -> PONTO_DE_ALUGUER, #_id -> FUNCIONARIO)
+DEPARTAMENTO (<ins>numero</ins>, nome, #codigo_postal -> CODIGOS_POSTAIS, rua, porta, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>id</ins> -> FUNCIONARIO)
 
-DEPARTAMENTO_FUNCIONARIO (_(#id, #numero), cargo))
+DEPARTAMENTO_FUNCIONARIO ((#<ins>id</ins> -> FUNCIONARIO, #<ins>numero</ins> -> DEPARTAMENTO), cargo))
 
-LINHA_ALUGUER (_(#codigo -> ARTIGO, #id -> ALUGUER), quantidade)
+LINHA_ALUGUER (_(#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), quantidade)
 
-CODIGOS_POSTAIS (_codigo_postal, localidade)
+CODIGOS_POSTAIS (<ins>codigo_postal</ins>, localidade)
 
 
 
