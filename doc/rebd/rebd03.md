@@ -166,7 +166,7 @@ Não há alterações
 
 |DepartamentoFuncionário|    |           |
 |-------|----|-----------|
-|#<ins>id</ins>->FUNCIONARIO|#<ins>numero</ins>->DEPARTAMENTO|cargo|
+|#<ins>id</ins>->Funcionario|#<ins>numero</ins>->DEPARTAMENTO|cargo|
 
 |LinhaAluguer     |        |       |
 |------------|--------|-------|
