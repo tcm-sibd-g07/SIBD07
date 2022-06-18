@@ -141,36 +141,36 @@ Não há alterações
 
 |Artigo     |      |      |      |
 |-----------|----|------|---|
-|_Código|nome|caução|tempolimite|
+|<ins>Código</ins>|nome|caução|tempolimite|
 
 |Cliente     |            |             |            |            |            |
 |-------------|------------|------------|------------|------------|------------|
-|_Código|ncc|telemóvel|email|primeironome|ultimonome|
+|<ins>Código</ins>|ncc|telemóvel|email|primeironome|ultimonome|
 
 |Aluguer    |    |                 |                    |                  |                    |
 |---------|----|-----------------|--------------------|--------------------|--------------------|
-|_id|data|entrega|#_código->Artigo|#_id->Ponto_de_Aluguer|#_código->Cliente|
+|<ins>id</ins>|data|entrega|#<ins>código</ins>->Artigo|#<ins>id</ins>->Ponto_de_Aluguer|#<ins>código</ins>->Cliente|
 
 |Ponto_De_Aluguer  |       |          |  |          |
 |----------|-------|----------|----------|----------|
-|_id|nome|rua|porta|#_códigopostal->Código_Postais|
+|<ins>id</ins>|nome|rua|porta|#<ins>códigopostal</ins>->Código_Postais|
 
 |Funcionário  |         |          |         |                        |           |       |           |
 |---------|---------|----------|---------|------------------------|-----------|-----------|-----------|
-|_id|ncc|primeironome|ultimonome|endereço|salário|dn|#_numero->Departamento|
+|<ins>id</ins>|ncc|primeironome|ultimonome|endereço|salário|dn|#<ins>numero</ins>->Departamento|
 
 |Departamento|    |         |         |       |         |         |
 |----------|----|---------|---------|---------|---------|---------|
-|_numero      |nome|#_código_Postal->Códigos_Postais|rua|porta|#_id->Ponto_De_Aluguer|#_id->Funcionário
+|<ins>numero</ins>      |nome|#<ins>código_Postal</ins>->Códigos_Postais|rua|porta|#<ins>id</ins>->Ponto_De_Aluguer|#<ins>id</ins>->Funcionário
 
 
 |DepartamentoFuncionário|    |           |
 |-------|----|-----------|
-|#id|_#numero|cargo|
+|#<ins>id</ins>|#<ins>numero</ins>->DEPARTAMENTO|cargo|
 
 |LinhaAluguer     |        |       |
 |------------|--------|-------|
-|#_código->Artigo|#_id->Aluguer|quantidade|
+|#<ins>código</ins>->Artigo|#<ins>id</ins>->Aluguer|quantidade|
 
 
 |Códigos_Postais         |                        |
