@@ -8,13 +8,13 @@
 
 ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
 
-CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, nome (primeiro, ultimo)
+CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, primeiro nome, ultimo nome)
 
 DEPARTAMENTO (<ins>numero</ins>, nome, {localizaçao (codigoPostal, rua, porta, localidade)})
 
 FUNCIONARIO (<ins>id</ins>, nCC, nome (primeiro, ultimo), endereço, salario, dn)
 
-ALUGUER (<ins>id</ins>, data, entrega)
+ALUGUER (<ins>id</ins>, data, quantidade)
 
 PONTO_DE_ALUGUER (nome, <ins>id</ins>, {localização (codigoPostal, rua, porta, localidade)})
 
@@ -27,9 +27,9 @@ Nao existem ligações 1:1
 
 ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
 
-CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, nome (primeiro, ultimo))
+CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, primeiro nome, ultimo nome)
 
-ALUGUER (<ins>id</ins>, data, entrega, #<ins>codigo</ins>-> ARTIGO, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
+ALUGUER (<ins>id</ins>, data, quantidade, #<ins>codigo</ins>-> ARTIGO, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
  
 PONTO_DE_ALUGUER (nome, <ins>id</ins>, {localização (codigoPostal, rua, porta, localidade)})
 
@@ -40,7 +40,7 @@ DEPARTAMENTO (<ins>numero</ins>, nome, {localizaçao (codigoPostal, rua, porta, 
 
 DEPARTAMENTO_FUNCIONARIO ((#<ins>id</ins> -> FUNCIONARIO, #<ins>numero</ins> -> DEPARTAMENTO), cargo))
 
-LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), quantidade)
+LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), #quantidade -> ALUGUER)
 
 
 
@@ -105,6 +105,19 @@ LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), quanti
 
 ## Normalização do Esquema Relacional
 _(Apresentar o estudo da normalização das relações obtidas na secção anterior. Desnormalizar se necessário.)_
+
+
+### Dependências Funcionais
+
+
+
+
+
+
+
+
+
+
 
 ### 1ª Forma Normal (1NF)
 
