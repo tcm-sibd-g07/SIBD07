@@ -5,7 +5,7 @@
 ### Tabela
 
 
-![Tabela](images/DiagramaTabelas.png)
+![Tabela](images/Diagrama Tabelas.png)
 
 
 
