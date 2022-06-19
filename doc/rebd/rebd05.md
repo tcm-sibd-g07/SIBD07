@@ -7,16 +7,11 @@ USE `sibd07` ;
 -- Table `sibd07`.`artigo`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `sibd07`.`artigo` (
-
   `codigo` INT NOT NULL AUTO_INCREMENT,
-  
   `nome` VARCHAR(100) NOT NULL,
-  
   `caucao` DECIMAL(10,2) NULL DEFAULT NULL,
-  
   `tempoLimite` INT NULL DEFAULT NULL,
- 
- PRIMARY KEY (`codigo`))
+  PRIMARY KEY (`codigo`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
