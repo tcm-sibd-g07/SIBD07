@@ -12,19 +12,15 @@
 
 | **Nome** | **Descrição** |
 | --- | --- |
-| **Formacao** | Informação sobre a formação | 
-| **precisaDe** | O funcionário precisa de ter formação para trabalhar em algumas secções. | 
-| **Funcionários** | Informaçoes sobre os funcionarios. | 
-| **Turno** | Informações sobre o turno. |
-| **definidoPor** | O turno é definido pelo horário. | 
-| **horario** |Informações sobre o horário. | 
-| **dependeDe** | O turno depende da secção em que trabalha. | 
-| **tem** | os fornecedores tem um horário. | 
-| **secção** |Informações sobre as secções. | 
-| **Fornecedor** |Informações sobre os fornecedores. | 
-| **Produto** |Informações sobre os produtos. | 
-| **envia** |A entrega envia o produto. | 
-| **Entrega** |Informações sobre as entregas. | 
+| **Departamento** | Informação sobre os departamentos. | 
+| **Artigo** | Informaçoes sobre os artigos. | 
+| **Aluguer** | Informações sobre os alugueres. |
+| **Cliente** |Informações sobre os Clientes. | 
+| **Funcionario** |Informações sobre os funcionários. | 
+| **Códigos Postais** |Informações sobre os códigos postais. | 
+| **Departamento Funcionário** |Informações sobre os funcionários que trabalham num departamento. | 
+| **Linha Aluguer** |Informações sobre o Aluguer dos Artigos. | 
+| **Ponto de Aluguer** |Informações sobre os Pontos de Aluguer. | 
   
 
 
