@@ -19,7 +19,7 @@ PONTO_DE_ALUGUER (nome, <ins>id</ins>, {localização (codigoPostal, rua, porta,
 
 ### Associações:
 
-trabalhaPara (FUNCIONARIO, DEPARTAMENTO) N:M  P/T
+trabalhaPara (FUNCIONARIO, DEPARTAMENTO) N:M  P/P
 
 efetua (CLIENTE, ALUGUER) 1:N  P/P
 
