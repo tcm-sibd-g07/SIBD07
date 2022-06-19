@@ -67,7 +67,7 @@ LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), quanti
 
 |Funcionário  |         |          |         |                        |           |       |           |
 |---------|---------|----------|---------|------------------------|-----------|-----------|-----------|
-|<ins>id</ins>|ncc|primeironome|ultimonome|endereço|salário|dn|#<ins>numero</ins>->Departamento|
+|<ins>id</ins>|ncc|primeironome|ultimonome|email|salário|dn|#<ins>numero</ins>->Departamento|
 
 |Departamento|    |         |         |       |         |         |
 |----------|----|---------|---------|---------|---------|---------|
