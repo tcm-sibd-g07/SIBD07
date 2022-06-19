@@ -10,7 +10,7 @@ CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, nome (primeiro, ultimo)
 
 DEPARTAMENTO (<ins>numero</ins>, nome, {localizaçao (codigoPostal, rua, porta, localidade)})
 
-FUNCIONARIO (<ins>id</ins>, nCC, nome (primeiro, ultimo), endereço, salario, dn)
+FUNCIONARIO (<ins>id</ins>, nCC, nome (primeiro, ultimo), email, salario, dn)
 
 ALUGUER (<ins>id</ins>, data, entrega)
 
