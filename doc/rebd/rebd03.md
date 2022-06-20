@@ -49,9 +49,9 @@ LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), quanti
 ## Relacoes 
 
 
-|Artigo     |      |      |      |                   |
-|-----------|----|------|---|------------------------|
-|<ins>Código</ins>|nome|caução|tempolimite|quantidade|
+|Artigo     |      |      |      |
+|-----------|----|------|---|
+|<ins>Código</ins>|nome|caução|tempolimite|
 
 |Cliente     |            |             |            |            |            |
 |-------------|------------|------------|------------|------------|------------|
