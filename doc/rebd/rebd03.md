@@ -16,7 +16,7 @@ FUNCIONARIO (<ins>id</ins>, nCC, nome (primeiro, ultimo), email, salario, dn)
 
 ALUGUER (<ins>id</ins>, data)
 
-PONTO_DE_ALUGUER (nome, <ins>id</ins>, {localização (codigoPostal, rua, porta, localidade)})
+PONTO_DE_ALUGUER (nome, <ins>id</ins>, {localização})
 
 
 ### Passo 2: Associações 1:1 
