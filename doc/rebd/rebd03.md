@@ -25,8 +25,6 @@ Nao existem ligações 1:1
 
 ### Passo 3: Associações 1:N
 
-ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
-
 CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, primeiro nome, ultimo nome)
 
 ALUGUER (<ins>id</ins>, data, #<ins>codigo</ins>-> ARTIGO, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
