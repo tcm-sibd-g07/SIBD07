@@ -29,7 +29,7 @@ ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
 
 CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, primeiro nome, ultimo nome)
 
-ALUGUER (<ins>id</ins>, data, quantidade, #<ins>codigo</ins>-> ARTIGO, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
+ALUGUER (<ins>id</ins>, data, #<ins>codigo</ins>-> ARTIGO, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
  
 PONTO_DE_ALUGUER (nome, <ins>id</ins>, {localização (codigoPostal, rua, porta, localidade)})
 
@@ -40,7 +40,7 @@ DEPARTAMENTO (<ins>numero</ins>, nome, {localizaçao (codigoPostal, rua, porta, 
 
 DEPARTAMENTO_FUNCIONARIO ((#<ins>id</ins> -> FUNCIONARIO, #<ins>numero</ins> -> DEPARTAMENTO), cargo))
 
-LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), #quantidade -> ALUGUER)
+LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), quantidade)
 
 
 
