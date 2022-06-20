@@ -12,7 +12,7 @@ DEPARTAMENTO (<ins>numero</ins>, nome, {localizaçao (codigoPostal, rua, porta, 
 
 FUNCIONARIO (<ins>id</ins>, nCC, nome (primeiro, ultimo), email, salario, dn)
 
-ALUGUER (<ins>id</ins>, data, entrega, quantidade)
+ALUGUER (<ins>id</ins>, data, quantidade)
 
 PONTO_DE_ALUGUER (nome, <ins>id</ins>, {localização (codigoPostal, rua, porta, localidade)})
 
