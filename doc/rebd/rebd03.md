@@ -49,7 +49,7 @@ LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), #quant
 ## Relacoes 
 
 
-|Artigo     |      |      |      |
+|Artigo     |      |      |      |                   |
 |-----------|----|------|---|
 |<ins>Código</ins>|nome|caução|tempolimite|quantidade|
 
@@ -78,9 +78,9 @@ LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), #quant
 |-------|----|-----------|
 |#<ins>id</ins>->Funcionario|#<ins>numero</ins>->DEPARTAMENTO|cargo|
 
-|LinhaAluguer     |        |       |
+|LinhaAluguer     |        |       |               |
 |------------|--------|-------|
-|#<ins>código</ins>->Artigo|#<ins>id</ins>->Aluguer|quantidade|
+|#<ins>código</ins>->Artigo|#<ins>id</ins>->Aluguer|
 
 
 |Códigos_Postais         |                        |
