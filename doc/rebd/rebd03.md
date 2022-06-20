@@ -8,11 +8,11 @@
 
 ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
 
-CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, primeiro nome, ultimo nome)
+CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, nome)
 
 DEPARTAMENTO (<ins>numero</ins>, nome, {localizaçao})
 
-FUNCIONARIO (<ins>id</ins>, nCC, nome (primeiro, ultimo), email, salario, dn)
+FUNCIONARIO (<ins>id</ins>, nCC, nome, email, salario, dn)
 
 ALUGUER (<ins>id</ins>, data)
 
