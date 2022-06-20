@@ -6,7 +6,7 @@
 
 ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
 
-CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, nome (primeiro, ultimo)
+CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, nome (primeiro, ultimo))
 
 DEPARTAMENTO (<ins>numero</ins>, nome, {localizaçao (codigoPostal, rua, porta, localidade)})
 
