@@ -115,6 +115,7 @@ codigoCliente -> primeiroNome, ultimoNome
 
 ### DF2
 códigoArtigo -> nome, caução, tempoLimite
+
 ###DF3
 númeroDepartamento -> nome
 
