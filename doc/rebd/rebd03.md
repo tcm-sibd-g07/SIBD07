@@ -119,6 +119,8 @@ _(Apresentar o estudo da normalização das relações obtidas na secção anter
 
 
 
+
+
 ### 1ª Forma Normal (1NF)
 
 ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
