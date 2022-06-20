@@ -51,7 +51,7 @@ LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), #quant
 
 |Artigo     |      |      |      |
 |-----------|----|------|---|
-|<ins>Código</ins>|nome|caução|tempolimite|
+|<ins>Código</ins>|nome|caução|tempolimite|quantidade
 
 |Cliente     |            |             |            |            |            |
 |-------------|------------|------------|------------|------------|------------|
