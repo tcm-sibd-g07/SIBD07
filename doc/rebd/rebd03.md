@@ -10,7 +10,7 @@ ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
 
 CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, primeiro nome, ultimo nome)
 
-DEPARTAMENTO (<ins>numero</ins>, nome, {localizaçao (codigoPostal, rua, porta, localidade)})
+DEPARTAMENTO (<ins>numero</ins>, nome, {localizaçao})
 
 FUNCIONARIO (<ins>id</ins>, nCC, nome (primeiro, ultimo), email, salario, dn)
 
@@ -31,9 +31,9 @@ CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, primeiro nome, ultimo nome)
 
 ALUGUER (<ins>id</ins>, data, #<ins>codigo</ins>-> ARTIGO, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
  
-PONTO_DE_ALUGUER (nome, <ins>id</ins>, {localização (codigoPostal, rua, porta, localidade)})
+PONTO_DE_ALUGUER (nome, <ins>id</ins>, {localização})
 
-DEPARTAMENTO (<ins>numero</ins>, nome, {localizaçao (codigoPostal, rua, porta, localidade)}, #<ins>id</ins> -> PONTO_DE_ALUGUER)
+DEPARTAMENTO (<ins>numero</ins>, nome, {localizaçao}, #<ins>id</ins> -> PONTO_DE_ALUGUER)
 
 
 ### Passo 4: Associações N:M
