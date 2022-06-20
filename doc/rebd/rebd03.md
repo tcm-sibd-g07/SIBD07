@@ -6,7 +6,7 @@
 
 ### Passo 1: Entidades e Atributos
 
-ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite, quantidade)
+ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
 
 CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, primeiro nome, ultimo nome)
 
