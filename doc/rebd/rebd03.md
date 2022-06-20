@@ -109,20 +109,26 @@ _(Apresentar o estudo da normalização das relações obtidas na secção anter
 
 ### Dependências Funcionais
 
+###DF1###
 codigoCliente -> primeiroNome, ultimoNome
 
-códigoArtigo -> nome, caução, tempoLimite
 
+###DF2###
+códigoArtigo -> nome, caução, tempoLimite
+###DF3###
 númeroDepartamento -> nome
 
 nome -> localização
 
 númeroDepartamento -> localização (dependência funcional transitiva)
 
+###DF4###
 idFuncionario -> nome, salario, dn
 
+###DF5###
 idAluguer -> data
 
+###DF6###
 idPontoAluguer -> nome
 
 nome -> localização
