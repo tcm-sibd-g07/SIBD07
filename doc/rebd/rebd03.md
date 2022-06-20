@@ -79,7 +79,7 @@ LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), #quant
 |#<ins>id</ins>->Funcionario|#<ins>numero</ins>->DEPARTAMENTO|cargo|
 
 |LinhaAluguer     |        |       |               |
-|------------|--------|-------|
+|------------|--------|-------|--------------------|
 |#<ins>código</ins>->Artigo|#<ins>id</ins>->Aluguer|
 
 
