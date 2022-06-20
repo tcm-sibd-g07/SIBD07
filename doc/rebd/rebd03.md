@@ -46,7 +46,7 @@ LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), quanti
 
 
 
-## Relacoes 
+## Relações
 
 
 |Artigo     |      |      |      |
