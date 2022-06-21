@@ -190,9 +190,38 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 ## DML
 
-### Tabela Artigo
+### Tabela Cliente
 
-![An alternative description](images/TabelaArtigos.jpg)
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000001', '405877574', 'cliente01@gmail.com', 'Kaye', 'Farman');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000002', '245316183', 'cliente02@gmail.com', 'Aubrey', 'Malster');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000003', '564265113', 'cliente03@gmail.com', 'Chas', 'Brockhouse');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000004', '315105348', 'cliente04@gmail.com', 'Gardy', 'Seale');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000005', '712102973', 'cliente05@gmail.com', 'Rogerio', 'Shrubsall');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000006', '853710430', 'cliente06@gmail.com', 'Cornell', 'Coddrington');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000007', '585141035', 'cliente07@gmail.com', 'Felic', 'Gooddie');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000008', '612796286', 'cliente08@gmail.com', 'Delbert', 'Sauvan');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000009', '275588367', 'cliente09@gmail.com', 'Ernaline', 'Bothams');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000010', '348275714', 'cliente10@gmail.com', 'Lindy', 'Moult');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000011', '244154626', 'cliente11@gmail.com', 'Clem', 'Whitsun');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000012', '594726514', 'cliente12@gmail.com', 'Hurley', 'Dugood');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000013', '442549296', 'cliente13@gmail.com', 'Aggie', 'Boteman');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000014', '128871120', 'cliente14@gmail.com', 'Hatty', 'Gladebeck');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000015', '463252569', 'cliente15@gmail.com', 'Carmine', 'Crumbie');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000016', '513153607', 'cliente16@gmail.com', 'Arliene', 'Drewe');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000017', '413355217', 'cliente17@gmail.com', 'Nanice', 'Braddick');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000018', '110679117', 'cliente18@gmail.com', 'Benito', 'Escalante');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000019', '779778454', 'cliente19@gmail.com', 'Elizabet', 'Batalini');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000020', '731815227', 'cliente20@gmail.com', 'Tome', 'D''Hooghe');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000021', '797771844', 'cliente21@gmail.com', 'Abby', 'Inskipp');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000022', '293447762', 'cliente22@gmail.com', 'Nissa', 'Ryder');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000023', '729176497', 'cliente23@gmail.com', 'Nelson', 'Penk');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000024', '185782483', 'cliente24@gmail.com', 'Chelsy', 'Mewrcik');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000025', '963669549', 'cliente25@gmail.com', 'Carlen', 'Madigan');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000026', '476718377', 'cliente26@gmail.com', 'Moe', 'Ertel');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000027', '471540263', 'cliente27@gmail.com', 'Berton', 'Cartin');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000028', '588129814', 'cliente28@gmail.com', 'Doyle', 'Amort');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000029', '403144670', 'cliente29@gmail.com', 'Freedman', 'Mulcahy');
+insert into cliente (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000030', '176170686', 'cliente30@gmail.com', 'Rog', 'Washington');
 
 
 #### Mencione os nomes dos artigos cuja caução é de 200.
