@@ -194,7 +194,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 USE `sibd07`;
 
-INSERT INTO `cliente` VALUES (nCC, telemovel, email, primeiroNome, ultimoNome) values ('10000001', '405877574', 'cliente01@gmail.com', 'Kaye', 'Farman'),
+INSERT INTO `cliente` VALUES (nCC, telemovel, email, primeiroNome, ultimoNome) ('10000001', '405877574', 'cliente01@gmail.com', 'Kaye', 'Farman'),
  ('10000002', '245316183', 'cliente02@gmail.com', 'Aubrey', 'Malster'),
  ('10000003', '564265113', 'cliente03@gmail.com', 'Chas', 'Brockhouse'),
  ('10000004', '315105348', 'cliente04@gmail.com', 'Gardy', 'Seale'),
@@ -238,6 +238,71 @@ INSERT INTO `artigo` VALUES (nome, caucao, tempoLimite) values ('guarda sol', '1
 ('bola', '5', '6'),
 ('mota de água', '150', '2'),
 ('prancha de surf', '70', '2');
+
+
+INSERT INTO `codigos_postais` VALUES (codigopostal, localidade) (1, 'Gejiu'),
+(2, 'Jiandou'),
+(3, 'Agraharam'),
+(4, 'Prince Albert'),
+(5, 'Mingshan'),
+(6, 'Qingzhou'),
+(7, 'Yuzawa'),
+(8, 'Gongnong'),
+(9, 'Sirāhā'),
+(10, 'Sterlitamak'),
+(11, 'Aygeshat'),
+(12, 'Hanchang'),
+(13, 'Padova'),
+(14, 'Raphoe'),
+(15, 'Castanheiro do Sul'),
+(16, 'Hushi'),
+(17, 'Xiongzhang'),
+(18, 'Al Mughayyir'),
+(19, 'Tangdukou'),
+(20, 'Tiyingtali Kelod'),
+(21, 'Portão'),
+(22, 'Taganak'),
+(23, 'Bershet’'),
+(24, 'Kumba'),
+(25, 'Norashen'),
+(26, 'Bejuco'),
+(27, 'São Vicente de Ferreira'),
+(28, 'Sing Buri'),
+(29, 'Renhe'),
+(30, 'Mem Martins');
+
+INSERT INTO `ponto_de_aluguer` VALUES (nome, rua, porta, codigopostal) ('Shuangwang', 'Fairfield', 54, 1),
+('Dębno', 'Havey', 68, 2),
+('Tulu Bolo', 'Morning', 51, 3),
+('Lansing', 'Green', 71, 4),
+('Karanyowka', 'Menomonie', 90, 5),
+('Ngembul', 'New Castle', 95, 6),
+('Furudate', 'Shoshone', 97, 7),
+('Paris 14', 'Browning', 20, 8),
+('Podstepki', 'Oak', 67, 9),
+('Pivovarikha', 'Westerfield', 98, 10),
+('Fuzhai', 'Fulton', 94, 11),
+('Puji', 'Arrowood', 43, 12),
+('Detroit', 'Browning', 41, 13),
+('Dongfeng', 'Manley', 100, 14),
+('Tver', 'Darwin', 27, 15),
+('Kochani', 'Green', 61, 16),
+('Rantaupanjang', 'Meadow Ridge', 90, 17),
+('Sharga', 'Artisan', 74, 18),
+('Onsala', 'Pine View', 74, 19),
+('Manturovo', 'Holy Cross', 83, 20),
+('Vitarte', 'Glendale', 22, 21),
+('Tapacocha', 'Brickson Park', 9, 22),
+('Virginia', 'Redwing', 18, 23),
+('Carriedo', 'Westend', 34, 24),
+('Babao', 'Golf Course', 89, 25),
+('Pau', 'Graedel', 73, 26),
+('Bahía Honda', 'Fulton', 73, 27),
+('Cijengkol', 'Maple Wood', 31, 28),
+('Gal’bshtadt', 'Crowley', 48, 29),
+('Hushi', 'Mallory', 30, 30);
+
+
 
 
 #### Mencione os nomes dos artigos cuja caução é de 200.
