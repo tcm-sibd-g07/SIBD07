@@ -224,6 +224,20 @@ INSERT INTO `cliente` VALUES (nCC, telemovel, email, primeiroNome, ultimoNome) v
  ('10000028', '588129814', 'cliente28@gmail.com', 'Doyle', 'Amort'),
  ('10000029', '403144670', 'cliente29@gmail.com', 'Freedman', 'Mulcahy'),
  ('10000030', '176170686', 'cliente30@gmail.com', 'Rog', 'Washington');
+ 
+INSERT INTO `artigo` VALUES (nome, caucao, tempoLimite) values ('guarda sol', '10', '5'),
+('baldes', '15', '6'),
+('cadeiras', '15', '6'),
+('raquetes', '15', '5'),
+('barbatanas', '20', '2'),
+('braçadeiras', '5', '4'),
+('toalhas', '5', '8'),
+('boia', '8', '4'),
+('tenda', '50', '6'),
+('chapéu', '5', '6'),
+('bola', '5', '6'),
+('mota de água', '150', '2'),
+('prancha de surf', '70', '2');
 
 
 #### Mencione os nomes dos artigos cuja caução é de 200.
