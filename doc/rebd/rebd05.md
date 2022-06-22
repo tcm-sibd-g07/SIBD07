@@ -229,7 +229,7 @@ INSERT INTO `artigo` (nome, caucao, tempoLimite) VALUES ('guarda sol', '10', '5'
 ('prancha de surf', '70', '2');
 
 
-INSERT INTO `codigos_postais` VALUES (codigopostal, localidade) (1, 'Gejiu'),
+INSERT INTO `codigos_postais` (codigopostal, localidade) VALUES (1, 'Gejiu'),
 (2, 'Jiandou'),
 (3, 'Agraharam'),
 (4, 'Prince Albert'),
@@ -260,7 +260,7 @@ INSERT INTO `codigos_postais` VALUES (codigopostal, localidade) (1, 'Gejiu'),
 (29, 'Renhe'),
 (30, 'Mem Martins');
 
-INSERT INTO `ponto_de_aluguer` VALUES (nome, rua, porta, codigopostal) ('Shuangwang', 'Fairfield', 54, 1),
+INSERT INTO `ponto_de_aluguer` (nome, rua, porta, codigopostal) VALUES ('Shuangwang', 'Fairfield', 54, 1),
 ('Dębno', 'Havey', 68, 2),
 ('Tulu Bolo', 'Morning', 51, 3),
 ('Lansing', 'Green', 71, 4),
@@ -321,7 +321,7 @@ INSERT INTO `aluguer` (data, idPontoAluguer, codigoCliente) VALUES ('2022-03-27'
 ('2021-07-21', 30, 30);
 
 
-INSERT INTO `linha_aluguer` VALUES (codigoArtigoA, idAluguer, quantidade) values (1, 1, 7),
+INSERT INTO `linha_aluguer` (codigoArtigoA, idAluguer, quantidade) VALUES (1, 1, 7),
 (2, 2, 8),
 (3, 3, 10),
 (4, 4, 3),
