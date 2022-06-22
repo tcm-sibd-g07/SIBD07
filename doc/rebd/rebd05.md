@@ -425,7 +425,7 @@ INSERT INTO `funcionario` (id, nCC, primeiroNome, ultimoNome, email, salario, dn
 (29, '4635041492', 'Carlie', 'Van Saltsberg', 'cvansaltsbergs@wiley.com', 858, '1999-07-08'),
 (30, '4479973060', 'Doralynn', 'Nock', 'dnockt@seattletimes.com', 845, '2000-03-15');
 
-INSERT INTO departamento_funcionario (idFuncionarioF, numeroDD, cargo) VALUES (1, 1, 'Surveyor'),
+INSERT INTO `departamento_funcionario` (idFuncionarioF, numeroDD, cargo) VALUES (1, 1, 'Surveyor'),
 (2, 2, 'Subcontractor'),
 (3, 3, 'Engineer'),
 (4, 4, 'Construction Manager'),
