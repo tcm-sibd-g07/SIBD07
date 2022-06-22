@@ -23,7 +23,7 @@ trabalhaPara (FUNCIONARIO, DEPARTAMENTO) N:M  P/P
 
 efetua (CLIENTE, ALUGUER) 1:N  P/P
 
-paraObter (ALUGUER, ARTIGO) M:N  P/T
+disponibiliza (ALUGUER, ARTIGO) M:N  P/T
 
 faz (PONTO_DE_ALUGUER, ALUGUER) 1:N  P/P
 
