@@ -55,17 +55,17 @@ LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), quanti
 |-------------|------------|------------|------------|------------|------------|
 |<ins>Código</ins>|ncc|telemóvel|email|primeironome|ultimonome|
 
-|Aluguer    |    |                 |                    |                  |                    |
-|---------|----|-----------------|--------------------|--------------------|--------------------|
-|<ins>id</ins>|data|entrega|#<ins>código</ins>->Artigo|#<ins>id</ins>->Ponto_de_Aluguer|#<ins>código</ins>->Cliente|
+|Aluguer    |    |                  |                  |                    |
+|---------|----|-----------------|--------------------|--------------------|
+|<ins>id</ins>|data|entrega|#<ins>id</ins>->Ponto_de_Aluguer|#<ins>código</ins>->Cliente|
 
 |Ponto_De_Aluguer  |       |          |  |          |
 |----------|-------|----------|----------|----------|
 |<ins>id</ins>|nome|rua|porta|#<ins>códigopostal</ins>->Código_Postais|
 
-|Funcionário  |         |          |         |                        |           |       |           |
-|---------|---------|----------|---------|------------------------|-----------|-----------|-----------|
-|<ins>id</ins>|ncc|primeironome|ultimonome|email|salário|dn|#<ins>numero</ins>->Departamento|
+|Funcionário  |         |          |         |                        |           |       |     
+|---------|---------|----------|---------|------------------------|-----------|-----------|
+|<ins>id</ins>|ncc|primeironome|ultimonome|email|salário|dn|
 
 |Departamento|    |         |         |       |         |         |
 |----------|----|---------|---------|---------|---------|---------|
