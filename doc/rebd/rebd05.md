@@ -450,27 +450,27 @@ INSERT INTO `departamento_funcionario` (idFuncionarioF, numeroDD, cargo) VALUES 
 
 
 
-#### Mencione os nomes dos artigos cuja caução é de 200.
+#### Mencione os nomes dos artigos cuja caução é de 10.
 
 SELECT nome
 
 FROM Artigo
 
-WHERE caução = 200;
+WHERE caução = 10;
 
 #### Mencione todos os nomes dos artigos.
 
 SELECT nome
 
-FROM Artigo;
+FROM artigo;
 
-#### Mencione os artigos cuja caução seja inferior a 5.
+#### Mencione os nomes dos funcionarios cujo salário seja superior a 750.
 
-SELECT nome
+SELECT salario
 
-FROM Artigo
+FROM funcionario
 
-WHERE caução < 5;
+WHERE salario > 750;
 
 
 ---
