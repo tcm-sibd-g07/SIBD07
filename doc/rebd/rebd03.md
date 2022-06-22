@@ -69,21 +69,20 @@ LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), quanti
 
 |Departamento|    |         |         |       |         |         |
 |----------|----|---------|---------|---------|---------|---------|
-|<ins>numero</ins>      |nome|#<ins>código_Postal</ins>->Códigos_Postais|rua|porta|#<ins>id</ins>->Ponto_De_Aluguer|#<ins>id</ins>->Funcionário
-
+|<ins>numero</ins>|nome|#<ins>código_Postal</ins>->Códigos_Postais|rua|porta|#<ins>id</ins>->Ponto_De_Aluguer|#<ins>id</ins>->Funcionário
 
 |DepartamentoFuncionário|    |           |
 |-------|----|-----------|
-|#<ins>id</ins>->Funcionario|#<ins>numero</ins>->DEPARTAMENTO|cargo|
+|#<ins>id</ins>->Funcionario|#<ins>numero</ins>->Departamento|cargo|
 
 |LinhaAluguer     |        |  
 |------------|--------|
 |#<ins>código</ins>->Artigo|#<ins>id</ins>->Aluguer|
 
 
-|Códigos_Postais         |                        |
+|Codigos_Postais         |                        |
 |-------------------|------------------------|
-|<ins>código_postal</ins>|localidade|
+|<ins>codigopostal</ins>|localidade|
 
 
 
