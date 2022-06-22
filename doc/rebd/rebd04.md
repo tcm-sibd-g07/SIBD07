@@ -5,7 +5,7 @@
 ### Tabela
 
 
-![Tabela](images/DiagramaTabelas.png)
+![Tabela](images/EsquemaTabelas.png)
 
 
 ##### Descrição das tabelas: 
