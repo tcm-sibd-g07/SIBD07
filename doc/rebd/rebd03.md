@@ -27,7 +27,7 @@ Nao existem ligações 1:1
 
 CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, primeiro nome, ultimo nome)
 
-ALUGUER (<ins>id</ins>, data, #<ins>codigo</ins>-> ARTIGO, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
+ALUGUER (<ins>id</ins>, data, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
  
 PONTO_DE_ALUGUER (nome, <ins>id</ins>, {localização})
 
@@ -67,9 +67,9 @@ LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> ALUGUER), quanti
 |---------|---------|----------|---------|------------------------|-----------|-----------|
 |<ins>id</ins>|ncc|primeironome|ultimonome|email|salário|dn|
 
-|Departamento|    |         |         |       |         |         |
-|----------|----|---------|---------|---------|---------|---------|
-|<ins>numero</ins>|nome|#<ins>código_Postal</ins>->Códigos_Postais|rua|porta|#<ins>id</ins>->Ponto_De_Aluguer|#<ins>id</ins>->Funcionário
+|Departamento|    |         |         |       |         |
+|----------|----|---------|---------|---------|---------|
+|<ins>numero</ins>|nome|#<ins>código_Postal</ins>->Códigos_Postais|rua|porta|#<ins>id</ins>->Ponto_De_Aluguer|
 
 |DepartamentoFuncionário|    |           |
 |-------|----|-----------|
@@ -150,13 +150,13 @@ ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
 
 CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, primeiro nome, ultimo nome)
 
-ALUGUER (<ins>id</ins>, data, entrega, #<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
+ALUGUER (<ins>id</ins>, data, entrega, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
  
 PONTO_DE_ALUGUER (nome, <ins>id</ins>, codigoPostal, rua, porta, localidade)
 
 FUNCIONARIO (<ins>id</ins>, nCC, primeiro nome, ultimo nome, endereço, salario, dn, #<ins>numero</ins> -> DEPARTAMENTO)
 
-DEPARTAMENTO (<ins>numero</ins>, nome, codigoPostal, rua, porta, localidade, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>id</ins> -> FUNCIONARIO)
+DEPARTAMENTO (<ins>numero</ins>, nome, codigoPostal, rua, porta, localidade, #<ins>id</ins> -> PONTO_DE_ALUGUER)
 
 LINHA_ALUGUER ((#<ins>codigo</ins> -> ARTIGO, #<ins>idAluguer</ins> -> ALUGUER), quantidade)
 
@@ -167,13 +167,13 @@ ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
 
 CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, primeiro nome, ultimo nome)
 
-ALUGUER (<ins>id</ins>, data, entrega, #<ins>codigo</ins>-> ARTIGO, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
+ALUGUER (<ins>id</ins>, data, entrega, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
  
 PONTO_DE_ALUGUER (nome, <ins>id</ins>, codigoPostal, rua, porta, localidade)
 
 FUNCIONARIO (<ins>id</ins>, nCC, primeiro nome, ultimo nome, endereço, salario, dn, #<ins>numero</ins> -> DEPARTAMENTO)
 
-DEPARTAMENTO (<ins>numero</ins>, nome, codigoPostal, rua, porta, localidade, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>id</ins> -> FUNCIONARIO)
+DEPARTAMENTO (<ins>numero</ins>, nome, codigoPostal, rua, porta, localidade, #<ins>id</ins> -> PONTO_DE_ALUGUER)
 
 DEPARTAMENTO_FUNCIONARIO ((#<ins>id</ins> -> FUNCIONARIO, #<ins>numero</ins> -> DEPARTAMENTO), cargo))
 
@@ -187,13 +187,13 @@ ARTIGO (<ins>codigo</ins>, nome, cauçao, tempo limite)
 
 CLIENTE (<ins>codigo</ins>, nCC, telemovel, email, primeiro nome, ultimo nome)
 
-ALUGUER (<ins>id</ins>, data, entrega, #<ins>codigo</ins> -> ARTIGO, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
+ALUGUER (<ins>id</ins>, data, entrega, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>codigo</ins> -> CLIENTE)
  
 PONTO_DE_ALUGUER (nome, <ins>id</ins>, #codigoPostal -> CODIGOS_POSTAIS, rua, porta)
 
 FUNCIONARIO (<ins>id</ins>, nCC, primeiro nome, ultimo nome, endereço, salario, dn, #<ins>numero</ins> -> DEPARTAMENTO)
 
-DEPARTAMENTO (<ins>numero</ins>, nome, #codigo_postal -> CODIGOS_POSTAIS, rua, porta, #<ins>id</ins> -> PONTO_DE_ALUGUER, #<ins>id</ins> -> FUNCIONARIO)
+DEPARTAMENTO (<ins>numero</ins>, nome, #codigo_postal -> CODIGOS_POSTAIS, rua, porta, #<ins>id</ins> -> PONTO_DE_ALUGUER)
 
 DEPARTAMENTO_FUNCIONARIO ((#<ins>id</ins> -> FUNCIONARIO, #<ins>numero</ins> -> DEPARTAMENTO), cargo))
 
